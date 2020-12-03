@@ -1,5 +1,4 @@
 const express = require('express'); 
-
 const dotenv = require('dotenv'); 
 const cors = require('cors'); 
 
@@ -12,7 +11,7 @@ app.use(cors());
 
 
 app.use('/api/*', (req, res) => {
-
+    res.send({hi: 'buddy'})
 })
 
 
